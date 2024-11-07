@@ -39,7 +39,7 @@ h1{
   height: 200px;
   display: flex;
   justify-content: center;
-  border: 2px solid rgb(211, 73, 18);
+  border: 2px solid aqua;
 }
 .add-btn input{
   width: 250px;
@@ -61,6 +61,10 @@ h1{
 .show-user{
   height: 200px;
   padding: 10px;
-  border: 1px solid rgb(11, 145, 163);
-  margin-top: 1px;
+  border: 2px solid aqua;
+  margin-top: 5px;
+}
+.main{
+  width: 80%;
+  margin: auto;
 }
