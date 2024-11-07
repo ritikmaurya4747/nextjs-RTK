@@ -9,13 +9,13 @@ const Slice = createSlice({
     initialState,
     reducers:{
         addTodos:(state, action) => {
-            console.log(action);
+            // console.log(action);
             const data = {
                 id:nanoid,
                 name:action.payload,
             }
             state.todos.push(data)
-            console.log("todos",data);
+            // console.log("todos",data);
             
         }
     }
