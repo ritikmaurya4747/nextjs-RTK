@@ -22,7 +22,10 @@ export default function AddUsers() {
             value={name}
           />
           <button onClick={userDispatch}>Add User</button>
-          <Link href={'/removeuser'}>Remove</Link>
+          <div className="link">
+            <Link href={"/removeuser"}>Remove</Link>
+            <Link href={"/todolist"}>Go to todo page</Link>
+          </div>
         </div>
       </div>
     </div>
