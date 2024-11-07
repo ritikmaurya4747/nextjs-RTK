@@ -1,7 +1,7 @@
-import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { createSlice, nanoid , current} from "@reduxjs/toolkit";
 
 const initialState = {
-  users: [],
+  users: JSON.parse(localStorage.getItem('users')) || []
 };
 
 const Slice = createSlice({
@@ -9,19 +9,20 @@ const Slice = createSlice({
   initialState,
   reducers: {
     addUser: (state, action) => {
-      // console.log("Action", action);
       const data = {
         id: nanoid(),
         name: action.payload,
       };
       state.users.push(data);
-      // console.log(data);
+      let userData = JSON.stringify(current(state.users));
+      localStorage.setItem('users', userData);
     },
     removeUser:(state, action) => {
      const data  = state.users.filter((item)=>{
       return item.id!==action.payload
      })
      state.users = data
+     localStorage.setItem("users", JSON.stringify(data)); 
     }
   },
 });
