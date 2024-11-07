@@ -94,21 +94,22 @@ h1{
 .user-list{
   background-color: skyblue;
   margin-top: 10px;
-  padding: 5px;
+  height: 55px;
   border-radius: 7px;
-  width: 250px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 10px 0px 10px;
 }
 .user-list button{
-  background-color: black;
+  background-color: rgb(25, 173, 69);
   color: white;
   font-size: 15px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px;
 }
 .link{
   display: flex;

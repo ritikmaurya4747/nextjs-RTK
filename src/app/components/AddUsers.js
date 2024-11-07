@@ -25,6 +25,7 @@ export default function AddUsers() {
           <div className="link">
             <Link href={"/removeuser"}>Remove</Link>
             <Link href={"/todolist"}>Go to todo page</Link>
+            <Link href={"/apiusers"}>Go to API User page</Link>
           </div>
         </div>
       </div>
