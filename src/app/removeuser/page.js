@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
+import { removeUser } from "../redux/slice";
 
 export default function Page() {
-  const userData = useSelector((state) => state.users);
+  const userData = useSelector((state) => state.userData.users);
   const dispatch = useDispatch();
   return (
     <div>
