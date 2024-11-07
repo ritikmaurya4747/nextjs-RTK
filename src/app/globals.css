@@ -63,8 +63,20 @@ h1{
   padding: 10px;
   border: 2px solid aqua;
   margin-top: 5px;
+  overflow-y: auto;
+}
+.show-user::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
 }
 .main{
   width: 80%;
   margin: auto;
+}
+.user-list{
+  background-color: skyblue;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 7px;
+  width: auto;
+  
 }
